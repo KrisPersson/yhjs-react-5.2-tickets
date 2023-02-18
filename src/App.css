@@ -1,0 +1,27 @@
+.App {
+  width: 23.4375rem;
+  min-height: 41.6875rem;
+  background: rgba(35, 31, 66, 1);
+  margin: auto;
+}
+
+.view {
+  width: inherit;
+  height: 100%;
+  padding: 2rem;
+  display: grid;
+  justify-items: center ;
+  grid-template-columns: 1fr;
+  grid-template-rows: 9rem 16.875rem 11.5rem;
+}
+
+.view h1, .view h2 {
+  font-family: 'Sansita';
+  color: rgba(245, 107, 154, 1);
+  margin: 0;
+  height: fit-content;
+}
+
+.view p {
+  margin: 0;
+}

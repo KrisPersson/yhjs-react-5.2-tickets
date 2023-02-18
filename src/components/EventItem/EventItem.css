@@ -1,0 +1,77 @@
+.event-item {
+    width: 100%;
+    height: 4.125rem;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.event-item:hover {
+    cursor: pointer;
+}
+
+.event-item__date-square {
+    width: 4.125rem;
+    height: 4.125rem;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.date-square__day {
+    font-size: 0.875rem;
+    line-height: 16.8px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.date-square__month {
+    font-size: 0.625rem;
+    line-height: 12px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.event-item__info {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 13.6875rem;
+    position: relative;
+    height: 110%;
+    transform: translateY(-6px);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 0.2rem 0;
+}
+
+.event-item h3 {
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 1px 0px #F56B9A;
+    font-size: 1.375rem;
+    margin: 0;
+}
+
+.info__venue {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.info__start-time, .info__end-time {
+    font-size: 0.875rem;
+    color: rgba(208, 208, 208, 1);
+}
+
+.info__price {
+    color: rgba(55, 174, 171, 1);
+    font-weight: 700;
+    font-size: 1.0625rem;
+    position: absolute;
+    right: 0;
+    bottom: 0.1rem;
+}
