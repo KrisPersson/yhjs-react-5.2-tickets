@@ -12,7 +12,7 @@ function EventItem({item, eventCalendar}) {
         const selectedItemObject = eventCalendar.filter(item => item.name === target)[0]
 
         if (selectedItemObject !== undefined) {
-            navigate('/buy', state={selectedItemObject})
+            navigate('/buy', {state: {selectedItemObject}})
         }
         console.log(selectedItemObject)
     }

@@ -6,5 +6,6 @@ body {
   width: 100vw;
   height: 100vh;
   margin: 0;
-  font-family: 'Fira sans'
+  font-family: 'Fira sans';
+  background: #e5e5e5;
 }
