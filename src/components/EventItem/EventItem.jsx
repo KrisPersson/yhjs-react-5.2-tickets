@@ -8,18 +8,17 @@ function EventItem({item, eventCalendar}) {
     const navigate = useNavigate()
 
     function handleClick(event) {
-        const target = event.target.textContent
+        const target = event.currentTarget.getAttribute('id')
         const selectedItemObject = eventCalendar.filter(item => item.name === target)[0]
 
         if (selectedItemObject !== undefined) {
             navigate('/buy', {state: {selectedItemObject}})
         }
-        console.log(selectedItemObject)
     }
 
 
     return (
-        <li onClick={ handleClick } className="event-item">
+        <li onClick={ handleClick } className="event-item" id={item.name}>
             <section className="event-item__date-square">
                 <p className="date-square__day">{item.date.day}</p>
                 <p className="date-square__month">{item.date.month}</p>

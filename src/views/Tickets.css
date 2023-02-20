@@ -1,0 +1,91 @@
+
+.view-tickets h1 {
+    text-align: center;
+    grid-row: 1 / span 1;
+    align-self: center;
+
+    font-size: 2.1875rem;
+}
+
+.tickets-details {
+
+    width: 100%;
+    height: 16.875rem;
+    background: #fff;
+    grid-row: 2 / span 1;;
+    align-self: center;
+    border-radius: 3px;
+    margin-top: 1rem;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5.625rem 7.125rem 4.125rem;
+}
+
+.view-tickets h4 {
+    margin: 0.5rem 1rem;
+    font-size: 0.625rem;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.tickets-details > section {
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+.tickets-details__what {
+    grid-row: auto / span 1;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.4);
+    /* color: rgba(245, 107, 154, 1); */
+}
+
+.tickets-details__what > p {
+    color: rgba(245, 107, 154, 1);
+    font-family: 'Sansita';
+    font-style: italic;
+    font-size: 1.625rem;
+    font-weight: 600;
+    margin: 0.5rem 1rem;
+}
+
+.tickets-details__where {
+    grid-row: auto / span 1;
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.tickets-details__where > p {
+    margin: 0.5rem 1rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.tickets-details__when {
+    grid-row: auto / span 1;
+    background: rgba(0, 0, 0, 0.06);
+    flex-flow: row nowrap !important;
+
+}
+.tickets-details__when > article {
+    flex: 1;
+    border-top: 1px dashed rgba(0, 0, 0, 0.4);
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.4);
+    height: 3.75rem;
+    align-self: flex-end;
+    /* padding: ; */
+
+}
+
+.tickets-details__when > article > p {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.125rem;
+    margin: 0.5rem;
+    margin-left: 1rem;
+    white-space: nowrap;
+}
+
+.when__from {
+    border: 1px dashed rgba(0, 0, 0, 0.4)
+}

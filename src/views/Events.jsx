@@ -6,7 +6,6 @@ import EventItem from '../components/EventItem/EventItem'
 function Events() {
 
   const [eventCalendar, setEventCalendar] = useState(events)
-console.log(events)
   return (
     <div className="view view-events">
       <h1>Events</h1>
