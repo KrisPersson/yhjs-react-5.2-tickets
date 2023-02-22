@@ -6,7 +6,17 @@ import Events from './views/Events'
 import Buy from './views/Buy'
 import Tickets from './views/Tickets'
 
+import { legacy_createStore } from 'redux'
+import { Provider } from 'react-redux'
+
+import { ticketReducer } from './reducers/ticketReducer'
+
 import './index.css'
+
+const store = legacy_createStore(
+  ticketReducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+)
 
 const router = createBrowserRouter([
   {
@@ -30,7 +40,9 @@ const router = createBrowserRouter([
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RouterProvider router={ router } />
-  </React.StrictMode>,
+  <Provider store={ store }>
+    <React.StrictMode>
+      <RouterProvider router={ router } />
+    </React.StrictMode>
+  </Provider>,
 )

@@ -1,13 +1,9 @@
 import './Tickets.css'
-
-import { useLocation, useNavigate } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 function Tickets() {
 
-    const location = useLocation()
-    const navigate = useNavigate()
-
-    const item = {...location.state}
+    const item = useSelector((state => {return state.chosenTicket}))
 
 
   return (

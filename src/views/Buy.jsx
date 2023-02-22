@@ -1,5 +1,6 @@
 import './Buy.css'
 
+import { useSelector } from 'react-redux'
 import {useLocation, useNavigate} from 'react-router-dom'
 
 function Buy() {
@@ -7,10 +8,11 @@ function Buy() {
     const location = useLocation()
     const navigate = useNavigate()
 
-    const item = location.state.selectedItemObject
+    const item = useSelector((state => {return state.chosenTicket}))
+
 
     function handleBuyClick() {
-        navigate('/tickets', {state: { ...item }})
+        navigate('/tickets')
     }
 
   return (
